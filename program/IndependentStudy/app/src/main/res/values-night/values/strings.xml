@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">訂餐系統</string>
+    <string name="app_wallet">錢包 :</string>
+    <string name="app_user_name">使用者 :</string>
+    <string name="buttom_user_1">訂購餐點</string>
+    <string name="buttom_user_2">交易紀錄</string>
+    <string name="buttom_user_3">離開系統</string>
+    <string name="buttom_user_4">顧客管理</string>
+    <string name="buttom_user_5">菜單設定</string>
+    <string name="buttom_user_6">新增顧客</string>
+    <string name="buttom_store_accc">顧客管理</string>
+    <string name="buttom_order_1">返回</string>
+    <string name="buttom_order_3">確認</string>
+    <string name="buttom_order_2">選擇日期</string>
+    <string name="version">beta 1.0.1</string>
+    <string name="introduce">感謝您使用此訂餐系統 目前位於測試階段!</string>
+    <string name="gray">#19FFF53B</string>
+    <string name="yellow">#FFF53B</string>
+    <string-array name="value">
+        <item>請選擇要訂購的數量..</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="change_money">
+        <item>請選擇要儲值的金額..</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+    </string-array>
+    >
+
+</resources>

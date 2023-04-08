@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    android:background="#0D00BCD4"
+
+    <TextView
+        android:id="@+id/background2"
+        android:layout_width="235dp"
+        android:layout_height="163dp"
+        android:background="#C5BFBF"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/indeterminateBar"
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:background="#00FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/box1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            app:srcCompat="@drawable/icon_title" />
+
+
+
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="請輸入帳號:"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="50"
+
+            android:hint="輸入帳號"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/b_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:text="寄出驗證碼"
+            android:textColor="#FFFFFF"
+            android:onClick="trigger"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="回上一頁"
+            android:textColor="#000000"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/imageView6_2"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            app:srcCompat="@drawable/icon_title" />
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:id="@+id/textView16_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="輸入驗證碼:"
+            android:textColor="#000000"
+            android:textSize="50dp"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+        <EditText
+            android:id="@+id/emailotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="50"
+            android:hint="輸入驗證碼"
+            android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/b_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:text="確定送出"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/b_re_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff53b"
+            android:text="重寄驗證碼"
+            android:textColor="@color/black"
+            android:onClick="trigger"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="回上一頁"
+            android:textColor="#000000"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/box3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            app:srcCompat="@drawable/icon_title"
+            tools:ignore="DuplicateIds" />
+
+
+
+        <TextView
+            android:id="@+id/passtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="請輸入密碼:"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="50"
+
+            android:hint="輸入密碼"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/pass_twotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="請輸入再輸入一次密碼:"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/pass_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="50"
+
+            android:hint="輸入密碼"
+            android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/b_reverse_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:text="更改密碼"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="回上一頁"
+            android:textColor="#000000"
+            android:textSize="40dp"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

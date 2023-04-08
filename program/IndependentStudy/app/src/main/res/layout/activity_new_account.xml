@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0DFFFFFF"
+    tools:context=".new_account">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="390dp"
+        android:layout_height="653dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="718dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3815E"
+                android:gravity="center_horizontal"
+                android:text="@string/buttom_store_accc"
+                android:textColor="#000000"
+                android:textSize="50dp" />
+
+            <EditText
+                android:id="@+id/search_acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="輸入您要查詢的帳號"
+                android:inputType="textPersonName"
+                android:textSize="24sp" />
+
+            <ListView
+                android:id="@+id/pressureList"
+                android:layout_width="match_parent"
+                android:layout_height="402dp"
+                android:scrollbarSize="8dp">
+
+            </ListView>
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F44336"
+                android:text="回上一頁"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="84dp"
+                    android:layout_weight="1"
+                    android:text="點選要想要儲值的顧客帳號即可幫忙加值!!"
+                    android:textColor="#000000"
+                    android:textSize="30sp" />
+
+                <FrameLayout
+                    android:id="@+id/frameLayout2"
+                    android:layout_width="83dp"
+                    android:layout_height="76dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="16dp">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab2"
+                        android:layout_width="67dp"
+                        android:layout_height="73dp" />
+
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:elevation="16dp"
+                        android:text="+"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

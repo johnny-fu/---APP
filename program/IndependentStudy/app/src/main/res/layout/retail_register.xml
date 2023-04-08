@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:background="#0D00BCD4"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="3sp"
+        android:paddingVertical="3sp"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="49dp">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            app:srcCompat="@drawable/icon_title" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:text="請輸入顧客帳號:"
+            android:textColor="#000000"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/acc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="account"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            android:text="輸入你想要創建的帳號提供給您的顧客來訂購您的餐點!"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/b_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:paddingVertical="3sp"
+            android:text="創建帳號"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:paddingVertical="3sp"
+            android:text="回上一頁"
+            android:textColor="#000000"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

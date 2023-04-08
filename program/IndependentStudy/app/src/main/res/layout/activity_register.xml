@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    android:background="#0D00BCD4"
+
+    <TextView
+        android:id="@+id/background2"
+        android:layout_width="235dp"
+        android:layout_height="163dp"
+        android:background="#C5BFBF"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/indeterminateBar"
+        android:layout_width="76dp"
+        android:layout_height="62dp"
+        android:background="#00FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/box1"
+        android:layout_width="333dp"
+        android:layout_height="716dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/icon_title" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="輸入您的帳號:"
+            android:textColor="#000000"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="輸入您的帳號(管理者提供給您的憑證)"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="請輸入密碼:"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="設定您的密碼(長度為4~12英數混雜)"
+            android:inputType="textPassword"
+            android:maxLength="12" />
+
+        <TextView
+            android:id="@+id/check_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="請再輸入一次密碼:"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/pass_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="再次輸入您的密碼"
+            android:inputType="textPassword"
+            android:maxLength="12" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="請輸入使用者名稱:"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="設定您的名稱(不可超過8個字)"
+            android:inputType="textPersonName"
+            android:maxLength="8" />
+
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="請輸入電子信箱:"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="50"
+            android:hint="設定您的電子郵件(寄送認證信)"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/b_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:text="設定完成"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="回上一頁"
+            android:textColor="#000000"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/box2"
+        android:layout_width="417dp"
+        android:layout_height="713dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/imageView6_2"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            app:srcCompat="@drawable/icon_title" />
+
+        <TextView
+            android:id="@+id/textView16_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="輸入驗證碼:"
+            android:textColor="#000000"
+            android:textSize="50dp"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+        <EditText
+            android:id="@+id/emailotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="50"
+            android:hint="輸入驗證碼"
+            android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/b_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:text="確定送出"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp" />
+        <Button
+            android:id="@+id/b_re_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff53b"
+            android:text="重寄驗證碼"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="回上一頁"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            tools:ignore="DuplicateIds" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

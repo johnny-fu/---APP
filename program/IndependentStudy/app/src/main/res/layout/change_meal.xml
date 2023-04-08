@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="313dp"
+        android:layout_height="423dp"
+        android:orientation="vertical"
+        android:paddingVertical="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            app:srcCompat="@drawable/icon_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5sp"
+            android:paddingVertical="5sp">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:background="#FF9800"
+                android:text="修改名稱"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:background="#E8FF9800"
+                android:text="修改價格"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="3sp"
+            android:paddingVertical="3sp">
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:background="#CEFF5722"
+                android:paddingHorizontal="5sp"
+                android:paddingVertical="5sp"
+                android:text="修改細節"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:background="#FF5722"
+                android:paddingHorizontal="5sp"
+                android:paddingVertical="5sp"
+                android:text="修改圖片"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="3sp"
+            android:paddingVertical="3sp">
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:background="#F44336"
+                android:text="刪除餐點"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

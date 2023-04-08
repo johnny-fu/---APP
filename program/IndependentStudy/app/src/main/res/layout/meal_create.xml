@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF9800"
+            android:gravity="center_horizontal"
+            android:text="餐點"
+            android:textColor="#000000"
+            android:textSize="50dp" />
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="請輸入產品名稱:"
+            android:textColor="#000000"
+            android:ems="10"
+            android:textSize="24dp"
+            android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="請輸入產品價錢:"
+            android:ems="10"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview18"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.3"
+            android:text="請輸入食物介紹:"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/subtitles"
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/img"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:onClick="selectImage"
+            android:text="選取圖片"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="218dp"
+        android:layout_height="159dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/showpath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="#8BC34A"
+        android:onClick="saveData"
+        android:text="新增餐點"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+
+</LinearLayout>
+
+

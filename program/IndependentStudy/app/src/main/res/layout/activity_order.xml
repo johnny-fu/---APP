@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D00BCD4"
+    tools:context=".order">
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="674dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="230dp"
+                android:layout_height="41dp"
+                android:paddingHorizontal="2dp"
+                android:text="@string/app_user_name"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="131dp"
+                android:layout_height="41dp"
+                android:background="#FFEB3B"
+                android:paddingHorizontal="2dp"
+                android:text="@string/app_wallet"
+                android:textColor="#101010"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingVertical="2dp"
+            android:text="@string/introduce"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="426dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rectengle"
+            android:orientation="vertical"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="404dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="5dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="342dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:background="#FF9800"
+                    android:gravity="center"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/buttom_user_1"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#BCBBBB"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@android:style/Widget.Button.Inset"
+                    android:layout_width="351dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingVertical="5dp"
+                    android:text="@string/buttom_order_2"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/date_1"
+                    android:layout_width="378dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="21sp" />
+
+                <ListView
+                    android:id="@+id/listview"
+                    style="@style/Widget.AppCompat.Light.ListView.DropDown"
+                    android:layout_width="351dp"
+                    android:layout_height="327dp"
+                    android:divider="@color/black"
+                    android:textFilterEnabled="false">
+
+                </ListView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/version"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.469"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.733" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView14"
+                    app:layout_constraintHorizontal_bias="0.285"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.692" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="72dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/star_button_select"
+                    android:backgroundTint="#F64E42"
+                    android:text="@string/buttom_order_1"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.123"
+                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.9" />
+
+                <Button
+                    android:id="@+id/buy"
+                    android:layout_width="72dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/star_button_select"
+                    android:backgroundTint="#FFF53B"
+                    android:text="@string/buttom_order_3"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.238"
+                    app:layout_constraintStart_toEndOf="@+id/button5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.9" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

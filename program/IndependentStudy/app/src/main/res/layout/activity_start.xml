@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/utaipei_cs" />
+        <LinearLayout
+            android:layout_width="371dp"
+            android:layout_height="663dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="183dp"
+                android:layout_height="184dp"
+                android:layout_marginTop="32dp"
+                app:srcCompat="@drawable/icon_title" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="317dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="訂餐APP"
+                android:textColor="#000000"
+                android:textSize="42sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="367dp"
+                android:layout_height="159dp"
+                android:alpha="30"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingVertical="5sp">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="375dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName"
+                        android:layout_width="379dp"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:hint="account"
+                        android:inputType="textPersonName"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="375dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editTextTextPassword"
+                        android:layout_width="379dp"
+                        android:layout_height="match_parent"
+
+                        android:ems="10"
+                        android:hint="password"
+                        android:inputType="textPassword"
+                        android:textSize="30sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="357dp"
+                android:layout_height="207dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="362dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="96dp"
+                        android:layout_height="51dp"
+                        android:background="@drawable/rectengle"
+                        android:clickable="true"
+                        android:onClick="perform_action_2"
+                        android:text="  登入"
+                        android:textColor="#000000"
+                        android:textSize="33sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView6"
+                        app:layout_constraintHorizontal_bias="0.473"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.384" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="157dp"
+                        android:layout_height="33dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:clickable="true"
+                        android:onClick="perform_action"
+                        android:text="忘記密碼"
+                        android:textColor="#777880"
+                        android:textSize="25sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.39" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="154dp"
+                        android:layout_height="37dp"
+                        android:clickable="true"
+                        android:onClick="perform_action_3"
+                        android:text="首次登入?"
+                        android:textColor="#3F51B5"
+                        android:textSize="32sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.77" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自動登入"
+                        android:textSize="25sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.091" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

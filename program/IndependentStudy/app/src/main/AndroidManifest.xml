@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.logintest">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.PERMISSIONS_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Logintest"
+        android:usesCleartextTraffic="true">
+
+        <receiver
+            android:name=".timernotifycation_client"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".timernotifycation_retailer"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".transaction_client" />
+        <activity android:name=".transaction_retail" />
+        <activity android:name=".mealActivity" />
+        <activity android:name=".mealCreateActivity" />
+        <activity android:name=".set_new_password" />
+        <activity android:name=".retail" />
+        <activity android:name=".register" />
+        <activity android:name=".order" />
+        <activity android:name=".first_login" />
+        <activity android:name=".forget_password" />
+        <activity android:name=".new_account" />
+        <activity android:name=".login"/>
+        <activity android:name=".reverse_pwd"/>
+        <activity android:name=".client_login"/>
+        <activity android:name=".uploadimg"/>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.logintest.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+        </provider>
+        <activity android:name=".start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".myservice_client">
+            <intent-filter>
+                <action android:name="com.e_eduspace.TIMER_ACTION_REPEATING" />
+                <action android:name="com.e_eduspace.TIMER_ACTION" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".myservice_retailer">
+            <intent-filter>
+                <action android:name="com.e_eduspace.TIMER_ACTION_REPEATING" />
+                <action android:name="com.e_eduspace.TIMER_ACTION" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
